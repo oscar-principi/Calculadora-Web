@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora elemental</h1>
+        </header>
+        <main>
+            
+            <!--Ingreso de datos-->
+            <section>
+                <div>
+                    <label for="valor1">Ingrese un numero:</label>
+                    <input id="valor1" type="number"><!--una forma de validar-->
+                </div>
+                <div>
+                    <label for="valor1">Ingrese un numero:</label>
+                    <input id="valor2" type="number">
+                </div>
+            </section>
+            
+            <!--Teclado Numerico-->
+            <section id="teclado">
+                <button type="button" onclick="agregarAlInput('1')">1</button>
+                <button type="button" onclick="agregarAlInput('2')">2</button>
+                <button type="button" onclick="agregarAlInput('3')">3</button>
+                <br>
+                <button type="button" onclick="agregarAlInput('4')">4</button>
+                <button type="button" onclick="agregarAlInput('5')">5</button>
+                <button type="button" onclick="agregarAlInput('6')">6</button>
+                <br>
+                <button type="button" onclick="agregarAlInput('7')">7</button>
+                <button type="button" onclick="agregarAlInput('8')">8</button>
+                <button type="button" onclick="agregarAlInput('9')">9</button>
+                <br>
+                <button type="button" onclick="agregarAlInput('0')">0</button>
+
+            </section>
+
+
+            <!--Proceso de informacion-->
+            <section class="btns">
+                <button class="btn" onclick="calcular('+')">+</button>
+                <button class="btn" onclick="calcular('-')">-</button>
+                <button class="btn" onclick="calcular('*')">*</button>
+                <button class="btn" onclick="calcular('/')">/</button>
+                <button class="btn" onclick="calcular('^')">^</button>
+                <button class="btn" onclick="calcular('sqrt')">√</button>
+                
+            </section>
+            
+            <!--Salida de informacion-->
+            <section>
+                <div>
+                    Operacion: <span id="operacion"> </span>
+                </div>
+                <br>
+                <div class="resultado">
+                    <span id="resultado"></span>
+                </div>
+                <br>
+                <div>
+                    <button id="btnReset" onclick="resetear()">Resetear</button>
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+            <p>Todos los derechos reservados 2024&#174</p>
+        </footer>
+
+        <script src="./calculadora.js"></script>
+</body>
+</html>
+
+
+<!--
+
+Metodo de intercambio de informacion entre HTML y JS:
+
+    HTML -> JS    La forma de ir desde HTML hacia .JS es por medio de los eventos
+
+    JS -> HTML La forma de ir desde JS hacia HTML es por medio del D.O.M. (Document Ojbet Model).
+
+
+-->

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Tektur', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('./ImgFondo/fondo.png'); /* Cambia 'ruta/de/la/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+/*-----------------------------------HEADER-------------------------------------*/
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+h1{
+   font-size: 5em;
+   margin: 0%;
+}
+
+/*-----------------------------------MAIN-------------------------------------*/
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #f4f4f4;
+}
+
+section {
+    margin-bottom: 15px;
+    background: #f4f4f4;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#teclado {
+    text-align: center;
+}
+
+#teclado button {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btns {
+    text-align: center; /* Centrar el contenido */
+}
+
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    font-size: 2em;
+    color: #333;
+}
+
+.resultado {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 420px; /* Ancho fijo */
+    height: 50px; /* Alto fijo */
+    margin: 20px auto; /* Centra el contenedor */
+}
+
+#btnReset {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 0.4em;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+#btnReset:hover {
+    background-color: #c9302c;
+}
+
+
+/*-----------------------------------FOOTER-------------------------------------*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
